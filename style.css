@@ -1,0 +1,96 @@
+*{
+    background-color: #4c5c6c;
+}
+.displayed_images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.City {
+    width: 480px;
+}
+.City:hover img {
+    transform: scale(1.1);
+    border-radius: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.City img {
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width:1206px) {
+    .displayed_images {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .City {
+        width: 350px;
+    }
+    
+    .City img {
+        width: 100%;
+        height: auto;
+        margin: 20px;
+    }
+}
+
+@media (max-width:1053px) {
+    .displayed_images {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .City {
+        width: 350px;
+    }
+    
+    .City img {
+        width: 100%;
+        height: auto;
+        margin: 20px;
+    }
+}
+#title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 20px;
+}
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #ed52cb, #2196F3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+button:hover {
+    background: linear-gradient(45deg, #2196F3, #e4d2d2);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
+.text {
+    text-align: center;
+}
+.diff_button {
+    text-align: right;
+}
